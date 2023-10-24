@@ -16,20 +16,28 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-void bubble_sort(int *array, size_t size);
+
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-listint_t *swap_node(listint_t *node, listint_t **list);
+
+/* 0-bubble_sort.c */
+void bubble_sort(int *array, size_t size);
+
+/* 1-insertion_sort_list.c */
 void insertion_sort_list(listint_t **list);
+
+/* 2-selection_sort.c */
 void selection_sort(int *array, size_t size);
+
+/* 3-quick_sort.c */
 void quick_sort(int *array, size_t size);
+void swap(int *a, int *b);
+size_t partition(int array[], size_t size);
+void print_sort(int array[], size_t size, int init);
+
+/* 100-shell_sort.c */
 void shell_sort(int *array, size_t size);
-void cocktail_sort_list(listint_t **list);
-void counting_sort(int *array, size_t size);
-void merge_sort(int *array, size_t size);
-void heap_sort(int *array, size_t size);
-void radix_sort(int *array, size_t size);
-void bitonic_sort(int *array, size_t size);
-void quick_sort_hoare(int *array, size_t size);
+void swap(int *array, int item1, int item2);
+
 
 #endif
