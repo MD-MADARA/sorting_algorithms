@@ -39,5 +39,7 @@ void print_sort(int array[], size_t size, int init);
 void shell_sort(int *array, size_t size);
 void swap_in_array(int *array, int item1, int item2);
 
+void cocktail_sort_list(listint_t **list);
+listint_t *swap_node(listint_t *node, listint_t **list);
 
 #endif
