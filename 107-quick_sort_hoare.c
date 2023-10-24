@@ -1,5 +1,19 @@
 #include "sort.h"
 /**
+ * swap_in_array - swap two array elements
+ * @array: The array
+ * @item1: array element
+ * @item2: array element
+*/
+void swap_in_array(int *array, int item1, int item2)
+{
+	int tmp;
+
+	tmp = array[item1];
+	array[item1] = array[item2];
+	array[item2] = tmp;
+}
+/**
  *hoare_partition - hoare partition sorting scheme implementation
  *@array: array
  *@first: first array element
