@@ -2,6 +2,8 @@
 #define SORT_H
 
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -65,4 +67,6 @@ void bitonic_sort(int *array, size_t size);
 
 /* 107-quick_sort_hoare.c */
 int hoare_partition(int *array, int first, int last, int size);
+
+
 #endif
