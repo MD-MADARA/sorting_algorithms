@@ -1,6 +1,26 @@
 #include "sort.h"
 #include <stdio.h>
 /**
+ * _calloc - this is a calloc function
+ * @nmemb: number of elemets
+ * @size: bit size of each element
+ * Return: pointer to memory assignement
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	unsigned int i = 0;
+	char *ptr;
+
+	if (!nmemb || !size)
+		return (NULL);
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+		return (NULL);
+	for (i = 0; i < (nmemb * size); i++)
+		ptr[i] = '\0';
+	return (ptr);
+}
+/**
  *merge - make a merge
  *@arr: one from start to mid
  *@tmp: temp array used in merge, was created outside to
