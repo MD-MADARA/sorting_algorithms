@@ -37,7 +37,7 @@ void print_sort(int array[], size_t size, int init);
 
 /* 100-shell_sort.c */
 void shell_sort(int *array, size_t size);
-void swap(int *array, int item1, int item2);
+void swap_in_array(int *array, int item1, int item2);
 
 
 #endif
