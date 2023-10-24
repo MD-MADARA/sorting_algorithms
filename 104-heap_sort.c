@@ -2,6 +2,18 @@
 #include <stdio.h>
 
 /**
+ * swap - utility function to swap to integers
+ * @a: integer a
+ * @b: integer b
+ **/
+void swap(int *a, int *b)
+{
+	int t = *a;
+
+	*a = *b;
+	*b = t;
+}
+/**
  * maxHeapify - The main function to heapify a Max Heap. The function
  * assumes that everything under given root (element at index idx)
  * is already heapified
